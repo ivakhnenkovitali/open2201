@@ -1,0 +1,102 @@
+body{
+	font-family: arial;
+}
+.container{
+	width: 800px;
+	margin: 0 auto;
+}
+.menu{
+	width: 180px;
+	margin-right: 20px;
+	float: left;
+}
+.main{
+	float: left;
+	width: 600px;
+}
+.menu_button{
+	padding: 10px 15px;
+	text-align: left;
+	color: #007bff;
+	border: none;
+	border-radius: 4px;
+	background: white;
+	width: 100%;
+	cursor: pointer;
+	font-weight: 700;
+}
+.focus{
+	background: #007bff !important;
+	color: white !important;
+}
+.form{
+	height: 150px;
+	background: #e9ecef;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+input{
+	padding: 5px 7px;
+	border-radius: 2px;
+	border: 1px solid #d3d8dd;
+	outline: none;
+}
+.i_width{
+	width: 70px;
+}
+.i_button{
+	padding: 5px 17px;
+	background: #28a745;
+	color: white;
+	border: 1px solid #28a745;
+	cursor: pointer;
+}
+table{
+	width: 100%;
+	border-collapse:collapse;
+}
+th, td{
+	text-align: center;
+	padding: 10px 5px;
+}
+th{
+	background: #212529;
+	color: white;
+}
+td{
+	color: #3a3b4e;
+}
+.a_button{
+	height: 30px;
+	width: 30px;
+	line-height: 27px;
+	text-align: center;
+	border: none;
+	border-radius: 2px;
+	color: white;
+	font-weight: 900;
+	cursor: pointer;
+}
+.green{
+	background: #28a745;
+}
+.yellow{
+	background: #ffc107;
+}
+.red{
+	background: #dc3545;
+}
+.total{
+	background: #dadada;
+}
+.total>td{
+	text-align: right;
+}
+.update{
+	border-color: #17a2b8;
+	background: #17a2b8;
+}
+.error{
+	border: 1px solid #ff8686;
+}

@@ -1,0 +1,187 @@
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  
+  #container {
+        width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 10px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    th,
+    td {
+        border: 1px solid #123;
+
+    }
+
+
+
+    button.del {
+        background-color: red;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        top:-15px;
+        cursor:pointer;
+        border:none;
+    }
+
+    .krest {
+        display: block;
+        background-color: aliceblue;
+border:none;
+        position: absolute;
+        top: 26px;
+        left: 13px;
+        transition: 0.5s;
+        background-color: red;
+
+    }
+
+    .krest::before,
+    .krest::after {
+        content: '';
+        background-color: aliceblue;
+        width: 25px;
+
+        height: 3px;
+        position: absolute;
+
+
+    }
+
+    .krest::before {
+        top: -1px;
+        left: 0px;
+        transform: rotate(45deg);
+    }
+
+    .krest::after {
+        top: -1px;
+        left: 0px;
+        transform: rotate(-45deg);
+    }
+
+    .edit {
+        width: 50px;
+        height: 50px;
+        background: orange;
+        border-radius: 5px;
+        cursor: pointer;
+        border:none;
+        display: block;
+
+    }
+    .edit img{
+        width: 41px;
+    }
+
+    tbody td div {
+        display: inline-block;
+    }
+
+    table thead {
+        background-color: #123;
+        color: #fff;
+    }
+
+    table thead th {
+        padding: 10px;
+    }
+
+    table tbody tr:nth-child(even) {
+        background-color: #eee;
+    }
+
+    table tbody td:first-child {
+
+        font-weight: 700;
+    }
+    table tbody td:last-child, table tbody td:nth-child(2) {
+
+       text-align: center;
+    }
+  td {
+        padding-left: 10px;
+    }
+    table tbody td:nth-child(6),
+    tfoot tr td:first-child,
+    tfoot tr td:nth-child(2), 
+     table  tbody tr td:nth-child(4), 
+     table  tbody tr td:nth-child(5)  {
+        text-align: right;
+        padding-right: 10px;
+    }
+
+  
+
+    table tbody tr:hover {
+        background-color: #f1f0f4;
+    }
+    table tfoot tr td{
+        padding: 10px 0;
+        background: #eee;
+    }
+    /*========================*/
+    header {
+    background: #eee;
+    padding-top: 89px;
+}
+header h1 {
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+.line {
+    background: #9e9999;
+    /* padding: 10px; */
+    height: 2px;
+    margin: 23px;
+    box-shadow: 1px 1px 0 #cdcdce;
+}
+form {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr ;
+    width: 90%;
+    padding-bottom: 50px;
+    margin: 0 auto 20px;
+    font-size: 20px;
+}
+input{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    margin: 0 10px;
+}
+input[type=submit]{
+background: green;
+color:#eee;
+}
+input.btn-edit{
+    background-color: #2110dd !important;
+}
+.left_span ul{
+list-style: none;
+}
+.left_span ul a{
+    text-decoration: none;
+    color: #2110dd;
+    display: block;
+    padding: 5px 10px;
+}
+.left_span ul a.activ{
+    background: #2110dd;
+    color:white;
+    border-radius: 5px;
+}

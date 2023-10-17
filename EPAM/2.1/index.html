@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Корзина</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="menu" id="menu">
+			<button class="menu_button">Shopping list</button>
+			<button class="menu_button">Done</button>
+			<button class="menu_button">Deleted</button>
+		</div>
+		<div class="main">
+			<div class="form">
+				<h2 id="text">Shopping list</h2>
+				<hr>
+				<form>
+					<input type="text" placeholder="Name" id="nameItem">
+					<input type="number" placeholder="Quatn" class="i_width" id="quant">
+					<input type="number" placeholder="Price" class="i_width" id="price">
+					<input type="button" value="Add" class="i_button" id="addItem">
+					<input type="button" value="Update" class="i_button update" hidden id="update">
+				</form>
+			</div>
+			<div class="for_table">
+				<table>
+					<tr>
+						<th>#</th>
+						<th>Item</th>
+						<th>Quantity</th>
+						<th>Price</th>
+						<th>Action</th>
+					</tr>
+					<tbody id="table"></tbody>
+					<tr class="total">
+						<td colspan="4">Total:</td>
+						<td>15</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
